@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>golive</title>
+    <link rel='stylesheet' href='./css/index.css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='navBar'>
+        <img src='./Assets/Logo.svg' alt='companyLogo' id='logo'/>
+        <img src='./Assets/GameCharacter_Sample.png' alt='userProfile' id='userPic'/>
+        <div id='z'>
+            <div id='z_right'></div>
+            <div id='z_left'></div>
+        </div>
+    </div>
+    <div class='page'>
+        <div class='sections'>
+            <section id='left'>
+                <div id='back'>
+                    <div id='leftArrow'>
+                        <img src='./Assets/AngleLeft.svg'/>
+                    </div>
+                    <div class='info'>
+                        <div id='info_type'>NEW AGE ESPORTS</div>
+                        <div id='info_ct'>CREATE TOURNAMENT</div>
+                    </div>
+                </div>
+                <div id='text'>
+                    <div id='triangle'></div>
+                    <div class='text_head'>CREATE</div>
+                    <div class='text_list'>
+                        <div id='text_setup'>Setup</div>
+                        <div>Brackets</div>
+                        <div>Streams</div>
+                        <div>Publish</div>
+                    </div>
+                    <div class='text_head'>SHARE</div>
+                    <div class='text_list'>
+                        <div>Invite Players</div>
+                        <div>Embed Codes</div>
+                    </div>
+                </div>
+            </section>
+            <section id='right'>
+                <div id='right_navBar'>
+                    <div href=''>BASICS</div>
+                    <div href=''>MAP PICKS</div>
+                    <div href=''>HOME TEAM STATS</div>
+                    <div href=''>QUEST TEAM STATS</div>
+                    <div id='help' href=''>HELP</div>
+                </div>
+                <div id='navIndicator'>
+                    <div id='nav_child_1' style='visibility: visible'></div>
+                    <div id='nav_child_2' style='visibility: hidden'></div>
+                    <div id='nav_child_3' style='visibility: hidden'></div>
+                    <div id='nav_child_4' style='visibility: hidden'></div>
+                </div>
+                <div class='BasicsPage'>
+                    <div class='Basics'>
+                        <div id="match_details">
+                            <div class='title'>MATCH DETAILS</div>
+                            <div id='haha'>
+                                <div id='selected_tournament'>SELECTED TOURNAMENT</div>
+                                <div id='tournament_name'>SKY LEAGUE TOURNAMENT</div>
+                            </div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div>
+                                        <div id='selectedDate'>Mar 10, 2021</div>
+                                        <img src='./Assets/Calendar.svg' alt='calendarImage' id='calendar'/>
+                                    </div>
+                                    <div class='predictions'>
+                                        <input placeholder="MATCH TYPE"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="teams_and_score">
+                            <div class='title'>TEAMS AND SCORE</div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div class='predictions'>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                        <span>DELHI DRAGONS</span>
+                                        <div>HOME TEAM</div>
+                                    </div>
+                                    <div class='predictions'>
+                                        <input placeholder="SELECT TEAM"/>
+                                        <div>GUEST TEAM</div>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE HOME TEAM SCORE"/>
+                                    </div>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE POLL PERCENTAGE"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="community_predictions">
+                            <div class='title'>COMMUNITY PREDICTIONS</div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE POLL PERCENTAGE"/>
+                                        <div>RESULT: &nbsp;1 - 2</div>
+                                    </div>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE POLL PERCENTAGE"/>
+                                        <div>RESULT: &nbsp;2 - 1</div>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE POLL PERCENTAGE"/>
+                                        <div>RESULT: &nbsp;3 - 0</div>
+                                    </div>
+                                    <div class='predictions'>
+                                        <input placeholder="TYPE POLL PERCENTAGE"/>
+                                        <div>RESULT: &nbsp;3 - 0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type='button' class='nextButton'>NEXT</button>
+                </div>
+                <div class='MapPicksPage' style='display: none;'>
+                    <div class='MapPicks'>
+                        <div class="map">
+                            <div class='title'>FIRST MAP</div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT MAP"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT A PICKING TEAM"/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>HOME TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>GUEST TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="VOD LINK"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input type="image/*" placeholder="UPLOAD SCREENSHOT"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div class='title'>FIRST MAP</div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT MAP"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT A PICKING TEAM"/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>HOME TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>GUEST TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="VOD LINK"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input type="image/*" placeholder="UPLOAD SCREENSHOT"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div class='title'>FIRST MAP</div>
+                            <div class='fields'>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT MAP"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input placeholder="SELECT A PICKING TEAM"/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>HOME TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>GUEST TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <input placeholder="VOD LINK"/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <input type="image/*" placeholder="UPLOAD SCREENSHOT"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type='button' class='backButton'>BACK</button>
+                    <button type='button' class='nextButton'>NEXT</button>
+                </div>
+                <div class='HomeTeamStatsPage' style='display: none;'>
+                    <div class='HomeTeamStats'>
+                        <div id='team_description'>
+                            <div id='des'>
+                                <img src='./Assets/TeamBadge_Sample.png' id='bigTeamLogo' alt='TeamLogo' />
+                                <p>DELHI DRAGONS</p>
+                            </div>
+                            <div id='memberProfiles'>
+                                <img src='./Assets/GameCharacter_Sample.png' alt='Member' />
+                                <img src='./Assets/GameCharacter_Sample.png' alt='Member' />
+                                <img src='./Assets/GameCharacter_Sample.png' alt='Member' />
+                                <img src='./Assets/GameCharacter_Sample.png' alt='Member' />
+                                <img src='./Assets/GameCharacter_Sample.png' alt='Member' />
+                            </div>
+                        </div>
+                        <div id='allMaps'>
+                            <div id='allMaps_text'>ALL MAPS</div>
+                            <div class='allMaps_child'>
+                                <div class='name'>
+                                    <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                    <div class='name_showtime'>VALYN</div>
+                                </div>
+                                <div class='allMaps_child_column'>
+                                    <div class='allMaps_child_row first_row'>
+                                        <div>
+                                            <input type='text' placeholder="ACS"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="K/D/A"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FB"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FD"/>
+                                        </div>
+                                    </div>
+                                    <div class='allMaps_child_row'>
+                                        <div>
+                                            <input type='text' placeholder="ESR, %"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="MVP"/>
+                                        </div>
+                                        <div class='last_div'>
+                                            <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='allMaps_child'>
+                                <div class='name'>
+                                    <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                    <div class='name_showtime'>VALYN</div>
+                                </div>
+                                <div class='allMaps_child_column'>
+                                    <div class='allMaps_child_row first_row'>
+                                        <div>
+                                            <input type='text' placeholder="ACS"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="K/D/A"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FB"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FD"/>
+                                        </div>
+                                    </div>
+                                    <div class='allMaps_child_row'>
+                                        <div>
+                                            <input type='text' placeholder="ESR, %"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="MVP"/>
+                                        </div>
+                                        <div class='last_div'>
+                                            <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='allMaps_child'>
+                                <div class='name'>
+                                    <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                    <div class='name_showtime'>VALYN</div>
+                                </div>
+                                <div class='allMaps_child_column'>
+                                    <div class='allMaps_child_row first_row'>
+                                        <div>
+                                            <input type='text' placeholder="ACS"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="K/D/A"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FB"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FD"/>
+                                        </div>
+                                    </div>
+                                    <div class='allMaps_child_row'>
+                                        <div>
+                                            <input type='text' placeholder="ESR, %"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="MVP"/>
+                                        </div>
+                                        <div class='last_div'>
+                                            <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='allMaps_child'>
+                                <div class='name'>
+                                    <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                    <div class='name_showtime'>VALYN</div>
+                                </div>
+                                <div class='allMaps_child_column'>
+                                    <div class='allMaps_child_row first_row'>
+                                        <div>
+                                            <input type='text' placeholder="ACS"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="K/D/A"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FB"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FD"/>
+                                        </div>
+                                    </div>
+                                    <div class='allMaps_child_row'>
+                                        <div>
+                                            <input type='text' placeholder="ESR, %"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="MVP"/>
+                                        </div>
+                                        <div class='last_div'>
+                                            <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='allMaps_child'>
+                                <div class='name'>
+                                    <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                    <div class='name_showtime'>VALYN</div>
+                                </div>
+                                <div class='allMaps_child_column'>
+                                    <div class='allMaps_child_row first_row'>
+                                        <div>
+                                            <input type='text' placeholder="ACS"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="K/D/A"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FB"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="FD"/>
+                                        </div>
+                                    </div>
+                                    <div class='allMaps_child_row'>
+                                        <div>
+                                            <input type='text' placeholder="ESR, %"/>
+                                        </div>
+                                        <div>
+                                            <input type='text' placeholder="MVP"/>
+                                        </div>
+                                        <div class='last_div'>
+                                            <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                        </div>
+                        <div id='ascent'>
+                            <div class='ascent_teamScores'>
+                                <div id='ascent_text'>ASCENT</div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>HOME TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>GUEST TEAM SCORE</div>
+                                        <img src='./Assets/TeamBadge_Sample.png' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='firstHalf'>
+                                <div id='first_text'>1ST HALF</div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>ATTACKING TEAM</div>
+                                        <img src='./Assets/ATK.svg' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>DEFENDING TEAM</div>
+                                        <img src='./Assets/DEF.svg' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='events'>
+                                <div>
+                                    <div>1</div>
+                                    <img src='./Assets/ATK_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>2</div>
+                                    <img src='./Assets/DEF_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>3</div>
+                                    <img src='./Assets/DEF_Diffuse.svg' />
+                                </div>
+                                <div>
+                                    <div>4</div>
+                                    <img src='./Assets/ATK_Blow.svg' />
+                                </div>
+                                <div>
+                                    <div>5</div>
+                                    <img src='./Assets/ATK_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>6</div>
+                                    <img src='./Assets/DEF_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>7</div>
+                                    <img src='./Assets/DEF_Diffuse.svg' />
+                                </div>
+                                <div>
+                                    <div>8</div>
+                                    <img src='./Assets/ATK_Blow.svg' />
+                                </div>
+                                <div>
+                                    <div>9</div>
+                                    <img src='./Assets/ATK_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>10</div>
+                                    <img src='./Assets/DEF_Ellimination.svg' />
+                                </div>
+                                <div>
+                                    <div>11</div>
+                                    <img src='./Assets/DEF_Diffuse.svg' />
+                                </div>
+                                <div>
+                                    <div>12</div>
+                                    <img src='./Assets/ATK_Blow.svg' />
+                                </div>
+                            </div>
+                            <div class='secondHalf'>
+                                <div id='second_text'>2ND HALF</div>
+                                <div class='field_row'>
+                                    <div class='mapField'>
+                                        <div>ATTACKING TEAM</div>
+                                        <img src='./Assets/ATK.svg' alt='teamLogo'/>
+                                    </div>
+                                    <div class='mapField'>
+                                        <div>DEFENDING TEAM</div>
+                                        <img src='./Assets/DEF.svg' alt='teamLogo'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='createEvents'>
+                                <div class="events">
+                                    <div>
+                                        <div>13</div>
+                                        <img src='./Assets/Caret_Down.svg' />
+                                    </div>
+                                    <div id='plusLogo'>
+                                        <img src='./Assets/Plus.svg' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='totalStats'>
+                                <div id='totalStats_text'>PLAYER STATS, TOTAL</div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="MVP"/>
+                                            </div>
+                                            <div class='last_div'>
+                                                <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>SHOWTIME</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="MVP"/>
+                                            </div>
+                                            <div class='last_div'>
+                                                <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>SHOWTIME</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="MVP"/>
+                                            </div>
+                                            <div class='last_div'>
+                                                <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>SHOWTIME</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="MVP"/>
+                                            </div>
+                                            <div class='last_div'>
+                                                <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>SHOWTIME</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="MVP"/>
+                                            </div>
+                                            <div class='last_div'>
+                                                <input type='text' placeholder="SELECT AGENTS PICKED"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='attackStats'>
+                                <div id='attackStats_text'>PLAYER STATS, ATTACK
+                                    <img src='./Assets/ATK.svg' id='attackLogo' />
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div id='specialDiv'>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div id='specialDiv'>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div id='specialDiv'>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div id='specialDiv'>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='allMaps_child'>
+                                    <div class='name'>
+                                        <img src='./Assets/GameCharacter_Sample.png' alt='profilePic' />
+                                        <div class='name_showtime'>VALYN</div>
+                                    </div>
+                                    <div class='allMaps_child_column'>
+                                        <div class='allMaps_child_row first_row'>
+                                            <div>
+                                                <input type='text' placeholder="ACS"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="K/D/A"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FB"/>
+                                            </div>
+                                            <div>
+                                                <input type='text' placeholder="FD"/>
+                                            </div>
+                                        </div>
+                                        <div class='allMaps_child_row'>
+                                            <div id='specialDiv'>
+                                                <input type='text' placeholder="ESR, %"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type='button' class='backButton'>BACK</button>
+                    <button type='button' class='nextButton'>NEXT</button>
+                </div>
+                <div class='QuestTeamStatsPage' style='display: none'></div>
+            </section>
+        </div>
+    </div>
+    <script>
+        const basic_nextButton = document.getElementsByClassName('nextButton')[0];
+        const mapPicks_backButton = document.getElementsByClassName('backButton')[0];
+        const mapPicks_nextButton = document.getElementsByClassName('nextButton')[1];
+        const homeTeamStats_backButton = document.getElementsByClassName('backButton')[1];
+        const homeTeamStats_nextButton = document.getElementsByClassName('nextButton')[2];
+        const navIndicators = document.getElementById('navIndicator').childNodes;
+
+        // console.log(navIndicators[1]);
+        // console.log(navIndicators[3]);
+        // console.log(navIndicators[5]);
+        // console.log(navIndicators[7]);
+
+        basic_nextButton.onclick = () => {
+            document.getElementsByClassName('BasicsPage')[0].style.display = 'none';
+            document.getElementsByClassName('MapPicksPage')[0].style.display = 'block';
+            navIndicators[1].style.visibility = 'hidden';
+            navIndicators[3].style.visibility = 'visible';
+        }
+        mapPicks_backButton.onclick = () => {
+            document.getElementsByClassName('BasicsPage')[0].style.display = 'block';
+            document.getElementsByClassName('MapPicksPage')[0].style.display = 'none';
+            navIndicators[1].style.visibility = 'visible';
+            navIndicators[3].style.visibility = 'hidden';
+        }
+        mapPicks_nextButton.onclick = () => {
+            document.getElementsByClassName('MapPicksPage')[0].style.display = 'none';
+            document.getElementsByClassName('HomeTeamStatsPage')[0].style.display = 'block';
+            navIndicators[5].style.visibility = 'visible';
+            navIndicators[3].style.visibility = 'hidden';
+        }
+        homeTeamStats_backButton.onclick = () => {
+            document.getElementsByClassName('MapPicksPage')[0].style.display = 'block';
+            document.getElementsByClassName('HomeTeamStatsPage')[0].style.display = 'none';
+            navIndicators[3].style.visibility = 'visible';
+            navIndicators[5].style.visibility = 'hidden';
+        }
+        // homeTeamStats_nextButton.onclick = () => {
+        //     document.getElementsByClassName('HomeTeamStatsPage')[0].style.display = 'none';
+        //     document.getElementsByClassName('QuestTeamStatsPage')[0].style.display = 'block';
+        //     navIndicators[7].style.visibility = 'visible';
+        //     navIndicators[5].style.visibility = 'hidden';
+        // }
+    </script>
+</body>
+</html>

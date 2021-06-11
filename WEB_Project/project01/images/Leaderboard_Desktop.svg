@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1066" height="80" viewBox="0 0 1066 80">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Leaderboard_Desktop);
+      }
+
+      .cls-2 {
+        fill: #f5f5f5;
+      }
+    </style>
+    <clipPath id="clip-Leaderboard_Desktop">
+      <rect width="1066" height="80"/>
+    </clipPath>
+  </defs>
+  <g id="Leaderboard_Desktop" class="cls-1">
+    <path id="Вычитание_76" data-name="Вычитание 76" class="cls-2" d="M-282.917,104.85h-1066v-80H-305.325l22.408,22.55v57.45Z" transform="translate(1348.917 -24.849)"/>
+  </g>
+</svg>

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'lato';
+}
+
+p {
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+h3 {
+	font-weight: 400;
+	margin-top: 0;
+}
+
+
+/* ---------------------------------------- */
+
+.wrapper {
+  width: 1152px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.wrapper p {
+  line-height: 2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.top-nav {
+  left: 0;
+  right: 0;
+  background: #222;
+  padding: 4px 0;
+}
+
+.top-nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.wrapper-l, .wrapper-r {
+	background: blue;
+}
+
+.wrapper-r {
+	display: flex;
+}
+
+
+/* ---------------------------------------- */
+
+.header-wrapper {
+  margin: 0 auto;
+  background: orange;
+  height: 100vh; /* something here*/
+}
+
+.hero {
+	height: 100%;
+	background: url(images/CEAT-Banner_Desktop.jpeg);
+	background-repeat: no-repeat;
+}
+
+.cropped {
+	margin-left: -200px;
+}
+
+.hero-Ce {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 46%;
+}
+
+.hero-center {
+	padding-top: 5%;
+}
+
+.Btinline {
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+}
+.play{
+	border:1px solid black;
+	background-color: lightblue;
+	margin: 0;
+  position: absolute;
+  margin-top:100px;
+  position: absolute;
+  down:80%;
+  left: 50%;
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-50%, -50%);
+} 
+.leader{
+	padding:100px;
+	text-align:center;
+	margin:0;
+}
+.ban
+{
+	
+	left:500px;
+	height:150;
+	width:200;
+	
+}
+.scoreT{
+	background-color:skyblue;
+	padding:60px 15px;
+}
+.scoreM{
+	background-color:silver;
+	width:100%;
+	height:500px;
+}
+.scoreN
+{
+	background-color:blue;
+	width:300px;
+	height:300px;
+	position:relative;
+}
+body {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	font-family: "Open Sans", sans-serif;
+}
+.listCard {
+    background: #e9e9f0;
+    border-radius: 2px 25px;
+    border: 1px solid #1c1b1b0f;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.heading h6 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #334ed1f0;
+}
+.date {
+    font-size: 19px;
+    font-weight: 700;
+    color: #35333bdb;
+    text-transform: uppercase;
+}
+.team {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+    color: #242121a6;
+}
+	
+	
+
+

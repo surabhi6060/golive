@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="126" viewBox="0 0 400 126">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Schedule_Mobile);
+      }
+
+      .cls-2 {
+        fill: #f5f5f5;
+      }
+    </style>
+    <clipPath id="clip-Schedule_Mobile">
+      <rect width="400" height="126"/>
+    </clipPath>
+  </defs>
+  <g id="Schedule_Mobile" class="cls-1">
+    <path id="Вычитание_79" data-name="Вычитание 79" class="cls-2" d="M-257.917,150.85H-634.063l-23.854-23.615V24.849h373.653l26.347,26.084v99.916Z" transform="translate(657.917 -24.849)"/>
+  </g>
+</svg>
